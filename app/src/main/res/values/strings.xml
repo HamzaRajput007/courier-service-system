@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Hadi Services</string>
+    <string name="log_in">Log In</string>
+    <string name="register">Register</string>
+    <string name="request_account">REQUEST ACCOUNT</string>
+    <string name="sign_up">Sign Up!</string>
+    <string name="pick_up_request">Pick Up Request</string>
+    <string name="pick_up">Pick Up</string>
+    <string name="book_courier_service">Book Courier Service</string>
+    <string name="book_courier_service_2">Book\tCourier Service</string>
+    <string name="volumatric_weight">Volumatric Weight</string>
+    <string name="select_order_type">Select Order Type</string>
+    <string name="select_volumatric_weight">Select Volumatric Weight</string>
+    <string name="select_booking_type">Select Booking Type</string>
+    <string name="select_service_type_book_Courier">Select Service Type</string>
+    <string name="overnight">Overnight</string>
+    <string name="sender_information">Sender Information</string>
+    <string name="reciever_postal_code">Reciever Postal Code*</string>
+    <string name="charges_details">Charges Details</string>
+    <string name="insurance_charges">Insurance Charges</string>
+    <string name="basic_charges">Basic Charges</string>
+    <string name="grand_total">Grand Total</string>
+    <string name="discount">Discount%</string>
+    <string name="discounted_amount">Discounted Amount</string>
+    <string name="payable_amount">Payable Amount</string>
+    <string name="cod_detail">COD DETAIL</string>
+    <string name="co_partner">CO PARTNER DETAIL</string>
+    <string name="final_status">FINAL STATUS</string>
+    <string name="book_now">BOOK NOW</string>
+    <string name="current_status">Current Status</string>
+    <string name="courier_service_final_status">Courier Service Final Status</string>
+    <string name="current_status2">Current Status</string>
+    <string name="service_type_overnight">Service Type Overnight</string>
+    <string name="final_cash_status">Final Cash Status</string>
+    <string name="book_courier_service_home">BOOK COURIER SERVICE</string>
+    <string name="title_activity_nagigation__drawer">Nagigation_Drawer</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="trace_n_track">TRACE &amp; \n TRACK</string>
+</resources>

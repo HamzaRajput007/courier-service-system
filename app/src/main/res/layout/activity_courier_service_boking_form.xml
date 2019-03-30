@@ -1,0 +1,1508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CourierServiceBokingForm">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--Top label-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_centerHorizontal="true"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/book_courier_service_2"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/darkGreen"
+                        android:textSize="30dp"/>
+                </LinearLayout>
+
+                <!--Customer Information Label-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkGreen"
+                        android:textSize="24dp"
+                        android:layout_centerInParent="true"
+                        android:text="Customer Information"/>
+
+                </LinearLayout>
+
+                <!--Consignment Number-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Consignment Number *"/>
+                
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/FirstNameTbLayoutId"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:paddingTop="5dp"
+                        android:inputType="number"
+                        android:textAllCaps="true"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerConsignmentNumId"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Booking Date-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Booking Date*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/LastNameTbLayoutId"
+                    android:layout_toRightOf="@+id/FirstNameTbLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:maxLines="5"
+                        android:inputType="date"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerBookingDateId"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Reference-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reference*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/EmailTbLayoutId"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerReferenceId"
+                        android:inputType="text"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Account# -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account # *"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/PhoneTbLayoutId"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerAccountNumId"
+                        android:inputType="number"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--origion Country-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Origion Country*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CompanyTbLayoutId"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerOrigionCountryId"
+                        android:inputType="text"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Origion Postal Code-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Origion Postal Code*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/AddressTbLayoutId"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerOrigionPostalCodeId"
+                        android:inputType="phone"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Origion City-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Origion City*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/PostalCodeTbLayoutId"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+
+                        android:id="@+id/bookCorSerOrigionCityId"
+                        android:inputType="text"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Destination Country-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Destination Country*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayoutId"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerDestinationCountryId"
+                        android:inputType="textEmailAddress"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Origion Postal Code (City)*-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Origion Postal Code (City)*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/OrigionTbLayoutId"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerDestCityPostalCodeId"
+                        android:inputType="number"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Destinaion City-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Destination City*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/ShipmentWeighTbLayoutId"
+                    android:layout_toRightOf="@+id/FirstNameTbLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:inputType="text"
+                        android:id="@+id/bookCorSerDestCityId"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Zone -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zone*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/DestinationTbLayoutId"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerZoneId"
+                        android:inputType="text"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Volumatric Weight Spinner-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:text="Volumatric Weight*"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Length* (cm)"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/OrigionTbLayoutId22d"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerLengthId"
+                        android:inputType="numberDecimal"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Width* (cm)"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/OrigionTbLayoutId212"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerWidthId"
+                        android:inputType="numberDecimal"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Height* (cm)"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/OrigionTbLayoutId22"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerHeightId"
+                        android:inputType="numberDecimal"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <!--
+                                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:id="@+id/bookCorSerVolumatricWeightId"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/select_volumatric_weight"
+                                    android:textColorHint="@color/darkGreen"
+                                    />
+                -->
+
+                <!--Weight (There Could Be Some Problem about top layout out id here)-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_height="wrap_content"
+                    android:text="Actual Weight*  (Kg)"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/OrigionTbLayoutId2"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerWeightTotalId"
+                        android:inputType="number"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Order Type-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order Type*"/>
+
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/bookCorSerOrderTypeId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/select_order_type"
+                    android:textColorHint="@color/darkGreen"
+                    />
+
+                <!--Booking Type-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Booking Type*"/>
+
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/bookCorSerBookingTypeId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/select_booking_type"
+                    android:textColorHint="@color/darkGreen"
+                    />
+
+                <!--Service Type Overnight-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Service Type Overnight*"/>
+
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/bookCorSerOvernightId"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"  android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/service_type_overnight"
+                    android:textColorHint="@color/darkGreen"
+                    />
+
+                <!--Pieces-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pieces*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/ShipmentDateTbLayoutId"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerPiecesId"
+                        android:inputType="textEmailAddress"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Booking Description-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Booking Description*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/ShipmentDateTbLayoutId2"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerBookingDesctionId"
+                        android:inputType="text"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Sender Information Label-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkGreen"
+                        android:textSize="24dp"
+                        android:layout_centerInParent="true"
+                        android:text="Sender Information"/>
+
+                </LinearLayout>
+
+                <!--Sender Name-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sender Name*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayoutId2"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerSenderNameId"
+                        android:inputType="text"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Sender Address-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sender Address*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayoutId21"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerSenderAddressId"
+                        android:inputType="text"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Sender Contact#-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sender Contact*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayoutId22"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerSenderContactId"
+                        android:inputType="phone"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Reciever Information Label-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkGreen"
+                        android:textSize="24dp"
+                        android:layout_centerInParent="true"
+                        android:text="Reciever Information"/>
+
+                </LinearLayout>
+
+                <!--Reciever Name-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reciever Name*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayoutId231"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerRecieverNameId"
+                        android:inputType="text"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Reciver Address-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reciever Address*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayoutId212"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerRecieverAddressId"
+                        android:inputType="text"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Reciver Postal Code-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Postal Code*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayoutId222"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerRecieverPostalCodeId"
+                        android:inputType="number"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Reciver City-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reciever City*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayoutId24"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerRecieverCityId"
+                        android:inputType="text"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Reciver Country-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reciever Country*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayoutId214"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerRecieverCountyId"
+                        android:inputType="text"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Reciver Contact#1-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reciever Contact# 1*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayoutId2223"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerRecieverContact1Id"
+                        android:inputType="phone"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Reciver Contact#2-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reciever Contact# 2"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayoutId224"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerRecieverContact2Id"
+                        android:inputType="phone"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Charges Details Label-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkGreen"
+                        android:textSize="24dp"
+                        android:layout_centerInParent="true"
+                        android:text="Charges Details"/>
+
+                </LinearLayout>
+
+
+                <!--Remote Area Charges-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remote Area Charges *"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayoutId1224"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerRemoteAreaChargesId"
+                        android:inputType="numberDecimal"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Insurance Charges-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Insurance Charges*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayoutId2124"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerInsuraceChargesId"
+                        android:inputType="phone"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Basic Charges-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Basic Charges*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayoutId2324"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerBasicChargesId"
+                        android:inputType="numberDecimal"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Grand Total-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grand Charges*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayoutId2254"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerGrandTotalId"
+                        android:inputType="numberDecimal"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Discount%-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Discount% *"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayoutId12424"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerDiscountId"
+                        android:inputType="numberDecimal"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Discounted Amount-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Discounted Amount*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayoutId4224"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerDiscountedAmountId"
+                        android:inputType="phone"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Payable Amount-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payable Amount *"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLeayoutId224"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerPayableAmountId"
+                        android:inputType="phone"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Final Cash Status-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Final Cash Status*"/>
+
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/bookCorSerFinalCashStatusId"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/final_cash_status"
+                    android:textColorHint="@color/darkGreen"
+                    />
+
+                <!--COD DETAIL Label-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkGreen"
+                        android:textSize="24dp"
+                        android:layout_centerInParent="true"
+                        android:text="COD Details"/>
+
+                </LinearLayout>
+
+                <!--Cod Client Name-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="COD Client Name *"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayoutId2514"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerCodClientNameId"
+                        android:inputType="text"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Cod Business Name-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="COD Bussiness Name *"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayoutId2314"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerCodBusinessNameId"
+                        android:inputType="text"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Cod Party Reference #-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="COD Party Reference *"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayoutId2147"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerCodPartyReferenceId"
+                        android:inputType="number"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Item Description-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item Description*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayoutId2194"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerItemDescriptionId"
+                        android:inputType="text"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Cod Amount-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="COD Amount*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayoutId21424"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerCodAmountId"
+                        android:inputType="numberDecimal"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--CO PARTNER DETAIL Label-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkGreen"
+                        android:textSize="24dp"
+                        android:layout_centerInParent="true"
+                        android:text="Co Partner Information"/>
+
+                </LinearLayout>
+
+                <!--Delivered By-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delilvered By*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayoutId2142f4"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerDeliveredById"
+                        android:inputType="text"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Date-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayoutId214254"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerDateId"
+                        android:inputType="date"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Tracking #-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tracking # *"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayoutId214424"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerTrackingNumId"
+                        android:inputType="number"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Charges-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Charges*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayoutId22q1424"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerChargesId"
+                        android:inputType="number"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--FINAL STATUS Label-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkGreen"
+                        android:textSize="24dp"
+                        android:layout_centerInParent="true"
+                        android:text="Final Status"/>
+
+                </LinearLayout>
+
+
+
+                <!--Delivery Rider-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery Rider*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayou3tId24"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerDeliveryRiderId"
+                        android:inputType="text"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Current Status-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Current Status*"/>
+
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/bookCorSerCurrentStatusId"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/current_status"
+                    android:textColorHint="@color/darkGreen"
+                    />
+
+                <!--Received By-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recieved By*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorReceivedById"
+                        android:inputType="date"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Remarks-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remarks"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerRemarksId"
+                        android:inputType="text"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Send SMS-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Send SMS *"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/bookCorSerSendSMSId"
+                        android:inputType="text"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:id="@+id/bookCorSerBookNowBtnId"
+                    android:text="@string/book_now"
+                    android:textColor="#ffffff"
+                    android:background="@color/darkGreen"
+                    />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

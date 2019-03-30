@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9b0c04</color>
+    <color name="colorPrimaryDark">#660000</color>
+    <color name="colorPrimaryLight">#d3482e</color>
+    <color name="textOnPrimary">#ffffff</color>
+    <color name="colorAccent">#d28284</color>
+    <color name="darkGreen">#660000</color>
+    <color name="white">#ffffff</color>
+    <color name = "editTextBgBorderColor" >#e0e0e0</color>
+
+
+
+    <!--<color name="white">#ffffff</color>
+    <color name="colorAccent">#188c79</color>
+    <color name="darkGreen">#228B22</color>-->
+</resources>

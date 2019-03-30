@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PickUpRequestForm">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--Top Label-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_centerHorizontal="true"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pick_up_request"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/darkGreen"
+                        android:textSize="30dp"/>
+                </LinearLayout>
+
+                <!--Customer Information Label-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkGreen"
+                        android:textSize="24dp"
+                        android:layout_centerInParent="true"
+                        android:text="Customer Information"/>
+
+                </LinearLayout>
+
+                <!--Name-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/FirstNameTbLayoutId"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingTop="5dp"
+                        android:id="@+id/pickUpReqNameId"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Address-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/LastNameTbLayoutId"
+                    android:layout_toRightOf="@+id/FirstNameTbLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:maxLines="5"
+                        android:id="@+id/PickUpReqAddressId"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <!--City-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="City*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/EmailTbLayoutId"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/PickUpReqCityId"
+                        android:inputType="text"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--State -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="State*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/PhoneTbLayoutId"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/PickUpReqStateId"
+                        android:inputType="phone"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Postal Code-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Postal Code*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CompanyTbLayoutId"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/PickUpReqPostalCodeId"
+                        android:inputType="number"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Telephone-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Telephone*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/AddressTbLayoutId"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/PickUpReqTelePhoneId"
+                        android:inputType="phone"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Mobile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/PostalCodeTbLayoutId"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/PickUpReqMobileId"
+                        android:inputType="phone"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Email ID-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email : *"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CityTbLayoutId"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/PickUpReqEmailId"
+                        android:inputType="textEmailAddress"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <!--Shipment Information Label-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkGreen"
+                        android:textSize="24dp"
+                        android:layout_centerInParent="true"
+                        android:text="Shipment Information"/>
+
+                </LinearLayout>
+
+                <!--Order Type-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order Type*"/>
+
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/pickUpOrderTypeId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Select Order Type"
+                    android:textColorHint="@color/darkGreen"
+                    />
+
+                <!--Service Type-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Service Type*"/>
+
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/pickUpServiceTypeId"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"  android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Select Service Type"
+                    android:textColorHint="@color/darkGreen"
+                    />
+
+                <!--Booking type-->
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking Type*"/>
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/pickUpReqBookingTypeId"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Select Booking Type"
+                    android:textColorHint="@color/darkGreen"
+                    />
+
+                <!--Shipment Weight-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shipment Weight*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/ShipmentWeighTbLayoutId"
+                    android:layout_toRightOf="@+id/FirstNameTbLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:inputType="numberDecimal"
+                        android:id="@+id/PickUpReqShipmentWeighId"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <!--Origion-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Origion*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/OrigionTbLayoutId"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/PickUpReqOrigionId"
+                        android:inputType="text"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Distribution -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Distribution*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/DestinationTbLayoutId"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/PickUpReqDestinationId"
+                        android:inputType="phone"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Shipment Date-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shipment Date*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/ShipmentDateTbLayoutId"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/PickUpReqShipmentDateId"
+                        android:inputType="date"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/requestPickUpBtnId"
+                    android:text="@string/pick_up"
+                    android:textColor="#ffffff"
+                    android:background="@color/darkGreen"
+                    />
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+

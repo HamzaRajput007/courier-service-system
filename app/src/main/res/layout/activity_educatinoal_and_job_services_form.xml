@@ -1,0 +1,1160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".EducatinoalAndJobServicesForm">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--Top Label-->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_centerHorizontal="true"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Educational And Jobs Services"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/darkGreen"
+                        android:textSize="30dp"/>
+                </RelativeLayout>
+
+                <!--Customer Information Label-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkGreen"
+                        android:textSize="24dp"
+                        android:layout_centerInParent="true"
+                        android:text="Customer Information"/>
+
+                </LinearLayout>
+
+
+                <!--Invoice Number-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Invoice Number *"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/FirstNameTbLayoutId"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingTop="5dp"
+                        android:id="@+id/eduAndJobInvoiceNumberId"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Booking Date-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Booking Date*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingTop="5dp"
+                        android:id="@+id/eduAndJobBookingDateId"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Reference-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reference*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingTop="5dp"
+                        android:id="@+id/eduAndJobReferenceId"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Account Num-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account Number*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingTop="5dp"
+                        android:id="@+id/eduAndJobAccountNumId"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Visit For : "/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jobs Matters"
+                    android:id="@+id/eduAndJobJobsMattersCheckBoxId"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Educational Matters"
+                    android:id="@+id/eduAndJobEducationalMattersCheckBoxId"/>
+
+                <!--Educational Matters LABEL-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkGreen"
+                        android:textSize="24dp"
+                        android:layout_centerInParent="true"
+                        android:text="Educational Matters"/>
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registration"
+                    android:id="@+id/eduAndJobRegistrationCheckBoxId"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registration Cancel"
+                    android:id="@+id/eduAndJobRegistrationCancelCheckBoxId"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admission"
+                    android:id="@+id/eduAndJobAdmissionCheckBoxId"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Degree Verification"
+                    android:id="@+id/eduAndJobDegreeVerificationCheckBoxId"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Duplicate Degree"
+                    android:id="@+id/eduAndJobDuplicateDegreeCheckBoxId"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOC"
+                    android:id="@+id/eduAndJobNOCCheckBoxId"/>
+
+
+
+                <!--Jobs Matters LABEL-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkGreen"
+                        android:textSize="24dp"
+                        android:layout_centerInParent="true"
+                        android:text="Job Matter"/>
+
+                </LinearLayout>
+
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PPSC"
+                    android:id="@+id/eduAndJobPPSCCheckBoxId"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FPSC"
+                    android:id="@+id/eduAndJobFPSCCheckBoxId"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NTS"
+                    android:id="@+id/eduAndJobNTSCheckBoxId"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UTS"
+                    android:id="@+id/eduAndJobUTSCheckBoxId"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OTS"
+                    android:id="@+id/eduAndJobOTSCheckBoxId"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PTS"
+                    android:id="@+id/eduAndJobPTSCheckBoxId"/>
+
+                <!--Board/University/Department LABEL-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkGreen"
+                        android:textSize="24dp"
+                        android:layout_centerInParent="true"
+                        android:text="Board / University / Department"/>
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eduAndJobBoarUniDepRadioGroupId">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BISE GUJRANWALA"
+                        android:id="@+id/eduAndJobBISEGUJRANWALAId"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BISE SARGODHA"
+                        android:id="@+id/eduAndJobBISESARGODHAId"/>
+
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BISE RAWALPINDI"
+                        android:id="@+id/eduAndJobBISERAWALPINDIId"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SARGODHA UNIVERSITY"
+                        android:id="@+id/eduAndJobSARGODHAUNIVERSITYId"/>
+
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PUNJAB UNIVERSITY"
+                        android:id="@+id/eduAndJobPUNJABUNIVERSITYId"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GUJRAT UNIVERSITY"
+                        android:id="@+id/eduAndJobGUJRATUNIVERSITYId"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AIOU ISLAMABAD"
+                        android:id="@+id/eduAndJobAIOUISLAMABADId"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        android:id="@+id/eduAndJobOtherBaordUniDepId"/>
+                </RadioGroup>
+
+                <!--Program LABEL-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkGreen"
+                        android:textSize="24dp"
+                        android:layout_centerInParent="true"
+                        android:text="Program"/>
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eduAndJobProgramRadioGroupId">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Matric"
+                        android:id="@+id/eduAndJobMatricId"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Inter"
+                        android:id="@+id/eduAndJobInterId"/>
+
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Graduation"
+                        android:id="@+id/eduAndJobGraduationId"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Master"
+                        android:id="@+id/eduAndJobMasterId"/>
+
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Higher"
+                        android:id="@+id/eduAndJobHigherId"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        android:id="@+id/eduAndJobOtherProgramId"/>
+
+                </RadioGroup>
+
+                <!--Part/ Semester LABEL-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkGreen"
+                        android:textSize="24dp"
+                        android:layout_centerInParent="true"
+                        android:text="Part / Semester"/>
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eduAndJobPartSemesterRadioGroupId">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Part1"
+                        android:id="@+id/eduAndJobPart1Id"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Part2"
+                        android:id="@+id/eduAndJobPart2Id"/>
+
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Semeter1"
+                        android:id="@+id/eduAndJobSemeter1Id"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Semeter2"
+                        android:id="@+id/eduAndJobSemeter2Id"/>
+
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Semeter3"
+                        android:id="@+id/eduAndJobSemeter3Id"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Semeter4"
+                        android:id="@+id/eduAndJobSemeter4Id"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Semeter5"
+                        android:id="@+id/eduAndJobSemeter5Id"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Semeter6"
+                        android:id="@+id/eduAndJobSemeter6Id"/>
+
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Semeter7"
+                        android:id="@+id/eduAndJobSemeter7Id"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Semeter8"
+                        android:id="@+id/eduAndJobSemeter8Id"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        android:id="@+id/eduAndJobOtherPartSemId"/>
+
+                </RadioGroup>
+
+                <!--Subjects Detail-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sunject Details*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingTop="5dp"
+                        android:id="@+id/eduAndJobSubjectsDetailId"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Charges Details LABEL-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkGreen"
+                        android:textSize="24dp"
+                        android:layout_centerInParent="true"
+                        android:text="Charges Details"/>
+
+                </LinearLayout>
+
+
+                <!--Registration Fee-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registration Fee*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingTop="5dp"
+                        android:id="@+id/eduAndJobRegistrationFeeId"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Registration Cancel Fee-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registration Cancel Fee*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingTop="5dp"
+                        android:id="@+id/eduAndJobRegistrationCancelFeeId"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Admission Fee-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admission Fee*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingTop="5dp"
+                        android:id="@+id/eduAndJobAdmissionFeeId"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--NOC Fee-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOC Fee*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingTop="5dp"
+                        android:id="@+id/eduAndJobNOCFeeId"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Verification Fee-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Verification Fee*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingTop="5dp"
+                        android:id="@+id/eduAndJobVerificationFeeId"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Duplicate Result -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Duplicate Result"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingTop="5dp"
+                        android:id="@+id/eduAndJobDuplicateResultId"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Card/Degree Fee-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Card/Degree Fee*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingTop="5dp"
+                        android:id="@+id/eduAndJobCardOrDegreeFeeId"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Processing Fee-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Processing Fee*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingTop="5dp"
+                        android:id="@+id/eduAndJobProcessingFeeId"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Service Fee-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Service Fee*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingTop="5dp"
+                        android:id="@+id/eduAndJobServiceFeeId"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Other Fee-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other Fee*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingTop="5dp"
+                        android:id="@+id/eduAndJobOtherFeeId"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Total Fee-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Fee*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingTop="5dp"
+                        android:id="@+id/eduAndJobTotalFeeId"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Paid Fee-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paid Fee"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingTop="5dp"
+                        android:id="@+id/eduAndJobPaidFeeId"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Pending Amount-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pending Amount*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingTop="5dp"
+                        android:id="@+id/eduAndJobPendingAmountId"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Cash Status : "/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eduAndJobCashStatusRadioGroupId">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Paid"
+                        android:id="@+id/eduAndJobPaidId"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pending"
+                        android:id="@+id/eduAndJobPendingId"/>
+
+
+
+                </RadioGroup>
+
+                <!--BANK DETAIL LABEL-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkGreen"
+                        android:textSize="24dp"
+                        android:layout_centerInParent="true"
+                        android:text="Bank Details"/>
+
+                </LinearLayout>
+
+
+                <!--Challan Number-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Challan Number*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingTop="5dp"
+                        android:id="@+id/eduAndJobChallanNumberId"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Paid Date-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paid Date*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingTop="5dp"
+                        android:id="@+id/eduAndJobPaidDateId"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Paid Amount-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paid Amount*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingTop="5dp"
+                        android:id="@+id/eduAndJobPaidAmountId"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--CO PARTNER DEATIL LABEL-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkGreen"
+                        android:textSize="24dp"
+                        android:layout_centerInParent="true"
+                        android:text="Co Partner Details"/>
+
+                </LinearLayout>
+
+
+                <!--Business Name-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bussiness Name*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingTop="5dp"
+                        android:id="@+id/eduAndJobBusinessNameId"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Date-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingTop="5dp"
+                        android:id="@+id/eduAndJobDateId"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Charges-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Charges*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingTop="5dp"
+                        android:id="@+id/eduAndJobChargesId"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--FINAL STATUS LABEL-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkGreen"
+                        android:textSize="24dp"
+                        android:layout_centerInParent="true"
+                        android:text="Final Status"/>
+
+                </LinearLayout>
+
+
+                <!--Final Status Radio Group-->
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eduAndJobFinalStatusRadioGroupId">
+
+                    <!--Pending-->
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pending"
+                        android:id="@+id/eduAndJobPendingFinalStatusId"/>
+
+                    <!--Completed-->
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Completed"
+                        android:id="@+id/eduAndJobCompletedFinalStatusId"/>
+
+
+
+                </RadioGroup>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:id="@+id/educationAndJobsServiceSubmitBtnId"
+                    android:text="SUBMIT"
+                    android:textColor="#ffffff"
+                    android:background="@color/darkGreen"
+                    />
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Sign_Up_Form_Activity">
+
+   <!-- <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/signUpToolbarId"
+        android:background="@color/colorPrimary"
+        android:title="Hadi Services"
+        android:titleTextColor="#ffffff">
+        
+    </android.support.v7.widget.Toolbar>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--Top Label-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/sign_up"
+                        android:textColor="@color/darkGreen"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <!--First Name-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="First Name*" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/FirstNameTbLayoutId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:id="@+id/signUpFNameId"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Last Name-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last Name*" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/LastNameTbLayoutId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/FirstNameTbLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:id="@+id/signUpLNameId"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Email-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/EmailTbLayoutId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:id="@+id/signUpEmailId"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:inputType="textEmailAddress"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Password-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/passwordTbLayoutId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:id="@+id/signUpPasswordId"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:inputType="textEmailAddress"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Re-Type Password-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Re-Enter Password*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/reTypePassTbLayoutId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:id="@+id/signUpReTypePasswordId"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:inputType="textEmailAddress"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Phone Number-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/PhoneTbLayoutId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:id="@+id/signUpPhoneId"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:inputType="phone"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Company-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Company*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/CompanyTbLayoutId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:id="@+id/signUpCompanyId"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:inputType="textEmailAddress"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Address-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/AddressTbLayoutId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:id="@+id/signUpAddressId"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:inputType="textEmailAddress"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Postal Code-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Postal Code*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/PostalCodeTbLayoutId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:id="@+id/signUPosCodeTbId"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:inputType="textEmailAddress"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--City-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="City*"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/CityTbLayoutId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:id="@+id/cityTbId"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_bg"
+                        android:inputType="textEmailAddress"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <!--Shipment Frequency-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shipment Frequency*  " />
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/shipmentFreqDDLV"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Select One"
+                        android:textColorHint="@color/darkGreen" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/requestAccountBtnId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/darkGreen"
+                    android:padding="5dp"
+                    android:text="@string/request_account"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:padding="20dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/NameLayoutId"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/NameTvLayoutId"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        &lt;!&ndash;<TextView&ndash;&gt;
+                        &lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;
+                        &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+                        &lt;!&ndash;android:text="Full Name : "&ndash;&gt;
+                        &lt;!&ndash;android:textSize="16dp"&ndash;&gt;
+                        &lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;
+                        &lt;!&ndash;android:textColor="@color/darkGreen"&ndash;&gt;
+                        &lt;!&ndash;/>&ndash;&gt;
+                    </RelativeLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:id="@+id/NameTbLayoutId"
+                        android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                        <android.support.design.widget.TextInputEditText
+
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:hint="Full Name"
+                            android:paddingTop="5dp"
+                            android:shadowColor="@color/colorPrimaryDark">
+
+                        </android.support.design.widget.TextInputEditText>
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/SignUpPasswordLayoutId"
+                    android:layout_below="@+id/NameLayoutId">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SignUpPasswordTvLayoutId"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        &lt;!&ndash;<TextView&ndash;&gt;
+                        &lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;
+                        &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+                        &lt;!&ndash;android:text="Password : "&ndash;&gt;
+                        &lt;!&ndash;android:textSize="16dp"&ndash;&gt;
+                        &lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;
+                        &lt;!&ndash;android:paddingTop="5dp"&ndash;&gt;
+                        &lt;!&ndash;android:textColor="@color/darkGreen"&ndash;&gt;
+                        &lt;!&ndash;/>&ndash;&gt;
+                    </RelativeLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:id="@+id/SignUpPasswordTbLayoutId"
+                        android:layout_toRightOf="@+id/SignUpPasswordTvLayoutId"
+                        android:padding="10dp"
+                        >
+
+                        <android.support.design.widget.TextInputEditText
+
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            android:shadowColor="@color/colorPrimaryDark">
+
+                        </android.support.design.widget.TextInputEditText>
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/registerBtnLayoutId"
+                    android:layout_below="@+id/passwordLayoutId">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:id="@+id/registerBtnId"
+                        android:text="@string/register"
+                        android:textColor="#ffffff"
+                        android:background="@color/darkGreen"
+                        />
+
+                </RelativeLayout>
+
+                &lt;!&ndash;<RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="130dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/LoginBtnLayoutId">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/newUserTvId"
+                        android:paddingTop="10dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="New User? "/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:layout_toRightOf="@+id/newUserTvId"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sign Up!"
+                            android:id="@+id/signUpBtnId"
+                            android:textStyle="bold"
+                            android:textColor="@color/darkGreen"
+                            android:clickable="true"
+                            android:textSize="20dp"/>
+                    </RelativeLayout>
+                </RelativeLayout>&ndash;&gt;
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>-->
+</RelativeLayout>

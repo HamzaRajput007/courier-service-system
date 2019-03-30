@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".CourierServiceStatusUpdateForm">
+
+    <!--Top Label-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Courier Service Status"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="@color/darkGreen"
+            android:textSize="30dp"/>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!--Consignment Number-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consignment Number*"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/OrigionTbLayoutId"
+                android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                <android.support.design.widget.TextInputEditText
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/edit_text_bg"
+                    android:id="@+id/courierServiceUpdateConsignmentNumberId"
+                    android:inputType="text"
+                    android:textAllCaps="true"
+                    android:paddingTop="5dp"
+                    android:shadowColor="@color/colorPrimaryDark">
+
+                </android.support.design.widget.TextInputEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!--Date & Time-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date &amp; Tiime*"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/ShipmentWeighTbLayoutId"
+                android:layout_toRightOf="@+id/FirstNameTbLayoutId">
+
+                <android.support.design.widget.TextInputEditText
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/edit_text_bg"
+                    android:inputType="datetime"
+                    android:id="@+id/courierServiceUpdateDateAndTimeId"
+                    android:paddingTop="5dp"
+                    android:shadowColor="@color/colorPrimaryDark">
+
+                </android.support.design.widget.TextInputEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!--Current Procedure-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Procedure*"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/DestinationTbLayoutId"
+                android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                <android.support.design.widget.TextInputEditText
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/edit_text_bg"
+                    android:id="@+id/courierServiceUpdateCurrentProcedurerId"
+                    android:inputType="text"
+                    android:paddingTop="5dp"
+                    android:shadowColor="@color/colorPrimaryDark">
+
+                </android.support.design.widget.TextInputEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!--Location-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location*"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/DestinationTbLayoutId2"
+                android:layout_toRightOf="@+id/NameTvLayoutId">
+
+                <android.support.design.widget.TextInputEditText
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/edit_text_bg"
+                    android:id="@+id/courierServiceUpdateLocationId"
+                    android:inputType="textPostalAddress"
+                    android:paddingTop="5dp"
+                    android:shadowColor="@color/colorPrimaryDark">
+
+                </android.support.design.widget.TextInputEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/courierServiceUpdateBtnId"
+                android:text="UPDATE"
+                android:textColor="#ffffff"
+                android:background="@color/darkGreen"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:name="http://schemas.android.com/apk/res-auto">
+
+
+   <!-- <item android:title="Sign Up"
+        android:id="@+id/signUpFormMenuItemId"/>-->
+
+    <item android:title="Request Pick Up"
+        android:id="@+id/pickUpReqFormMenuItemId"/>
+
+    <item android:title="Book Courier Service"
+        android:icon="@mipmap/plus"
+        android:id="@+id/courierServiceBookingFormMenuItemId"/>
+
+    <item android:title="Update Courier Service Status"
+        android:id="@+id/courierServiceStatusUpdateFormMenuItemId"/>
+
+    <item android:title ="Educational And Job Services"
+        android:id="@+id/educationalAndJobServicesFormMenuItemId"/>
+
+    <item android:title="Travel Tours Services"
+        android:id="@+id/travelToursServicesFormMenuItemId"/>
+
+    <item android:title="Cash Update"
+        android:id="@+id/cashUpdateFormMenuItemId"/>
+
+    <item android:title="Courier Service Final Status"
+        android:id="@+id/courierServiceFinalStatusMenuItemId"/>
+
+</menu>

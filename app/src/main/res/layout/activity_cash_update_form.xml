@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".CashUpdateForm">
+
+    <!--Top Label-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cash Update"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="@color/darkGreen"
+            android:textSize="30dp"/>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--Invoice Number-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invoice Number*"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/OrigionTbLayoutId"
+            android:layout_toRightOf="@+id/NameTvLayoutId">
+
+            <android.support.design.widget.TextInputEditText
+
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:id="@+id/cashUpdateInvoiceNumberId"
+                android:inputType="number"
+                android:paddingTop="5dp"
+                android:shadowColor="@color/colorPrimaryDark">
+
+            </android.support.design.widget.TextInputEditText>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!--Date & Time-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date &amp; time*"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/ShipmentWeighTbLayoutId"
+            android:layout_toRightOf="@+id/FirstNameTbLayoutId">
+
+            <android.support.design.widget.TextInputEditText
+
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:inputType="datetime"
+                android:id="@+id/cashUpdateDateAndTimeId"
+                android:paddingTop="5dp"
+                android:shadowColor="@color/colorPrimaryDark">
+
+            </android.support.design.widget.TextInputEditText>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!--Paid Amount -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paid Amount *"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/DestinationTbLayoutId"
+            android:layout_toRightOf="@+id/NameTvLayoutId">
+
+            <android.support.design.widget.TextInputEditText
+
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:id="@+id/cashUpdatePaidAmountId"
+                android:inputType="numberDecimal"
+                android:paddingTop="5dp"
+                android:shadowColor="@color/colorPrimaryDark">
+
+            </android.support.design.widget.TextInputEditText>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!--Remarks-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remarks*"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/DestinationTbLayoutId2"
+            android:layout_toRightOf="@+id/NameTvLayoutId">
+
+            <android.support.design.widget.TextInputEditText
+
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:id="@+id/cashUpdateRemarksId"
+                android:inputType="numberDecimal"
+                android:paddingTop="5dp"
+                android:shadowColor="@color/colorPrimaryDark">
+
+            </android.support.design.widget.TextInputEditText>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!--Update Button-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/cashUpdateSaveBtnId"
+            android:text="UPDATE"
+            android:textColor="#ffffff"
+            android:background="@color/darkGreen"
+            />
+
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <!--Upper Gap-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
+
+            <!--logo -->
+            <LinearLayout
+                android:id="@+id/logoImageViewLayoutId"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="2.5"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/logo" />
+
+            </LinearLayout>
+            <!--Inner Gap-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/log_in"
+                        android:textColor="@color/darkGreen"
+                        android:textSize="32dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <!--User Name-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username*" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/FirstNameTbLayoutId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:id="@+id/loginFormUsernameTvId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_bg"
+                        android:inputType="text"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark"
+                        android:textAllCaps="true">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Password-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password*" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/FirstNameTbLayout2Id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:id="@+id/loginFormPasswordTvId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_bg"
+                        android:inputType="textPassword"
+                        android:paddingTop="5dp"
+                        android:shadowColor="@color/colorPrimaryDark"
+                        android:textAllCaps="true">
+
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Login Button-->
+                <Button
+                    android:id="@+id/loginButtonId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/darkGreen"
+                    android:padding="5dp"
+                    android:text="@string/log_in"
+                    android:textColor="#ffffff" />
+
+                <!--New User? Sign Up-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="New User?   " />
+
+                    <TextView
+                        android:id="@+id/signUpBtnId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:text="Sign Up!"
+                        android:textColor="@color/darkGreen"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--content-->
+            <!--<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp">
+
+                &lt;!&ndash;Login Label&ndash;&gt;
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/log_in"
+                        android:textColor="@color/darkGreen"
+                        android:textSize="32dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:paddingTop="5dp"
+                    android:padding="20dp">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="50dp"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+
+                            >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Consignment Number *"/>
+
+
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:id="@+id/userNameTbLayoutId"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_toRightOf="@+id/userNameTvLayoutId">
+
+                                    <android.support.design.widget.TextInputEditText
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/edit_text_bg"
+                                        android:paddingTop="5dp"
+                                        android:shadowColor="@color/colorPrimaryDark">
+
+                                    </android.support.design.widget.TextInputEditText>
+
+                                </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+
+
+
+
+                                    &lt;!&ndash;<TextView&ndash;&gt;
+                                    &lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;
+                                    &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+                                    &lt;!&ndash;android:text="Password : "&ndash;&gt;
+                                    &lt;!&ndash;android:textSize="16dp"&ndash;&gt;
+                                    &lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;
+                                    &lt;!&ndash;android:paddingTop="5dp"&ndash;&gt;
+                                    &lt;!&ndash;android:textColor="@color/darkGreen"&ndash;&gt;
+                                    &lt;!&ndash;/>&ndash;&gt;
+                                </RelativeLayout>
+
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:id="@+id/passwordTbLayoutId"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_toRightOf="@+id/passwordTvLayoutId"
+                                    android:padding="10dp">
+
+                                    <android.support.design.widget.TextInputEditText
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/edit_text_bg"
+                                        android:inputType="textPassword"
+                                        android:shadowColor="@color/colorPrimaryDark">
+
+                                    </android.support.design.widget.TextInputEditText>
+
+                                </android.support.design.widget.TextInputLayout>
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/LoginBtnLayoutId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/passwordLayoutId">
+
+                                <Button
+                                    android:id="@+id/loginButtonId"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/darkGreen"
+                                    android:padding="5dp"
+                                    android:text="@string/log_in"
+                                    android:textColor="#ffffff" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/LoginBtnLayoutId"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="130dp"
+                                android:layout_marginTop="20dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/newUserTvId"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="10dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="2dp"
+                                        android:text="New User? " />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/newUserTvId"
+                                    android:paddingTop="5dp">
+
+                                    <TextView
+                                        android:id="@+id/signUpBtnId"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:clickable="true"
+                                        android:text="Sign Up!"
+                                        android:textColor="@color/darkGreen"
+                                        android:textSize="20dp"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+                    </ScrollView>
+                </RelativeLayout>
+            </RelativeLayout>-->
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
